@@ -245,7 +245,7 @@ class SectionThree:
 
             self._ui.section("🚀 INICIANDO ENGINE DE ENTRENAMIENTO... ")
 
-            trainer = Trainer(Path(context.get("base_model_path", "N/A")).name)
+            trainer = Trainer(str(context.get("base_model_path", "N/A")))
             success, best_model_path = trainer.run(
                 data_yaml=context.get("yaml_path", "N/A"),
                 epochs=context.get("epochs", 0),
