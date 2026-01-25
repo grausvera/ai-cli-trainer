@@ -1,0 +1,6 @@
+rich
+gdown
+ultralytics
+pyyaml
+requests
+rarfile
